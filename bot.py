@@ -111,7 +111,7 @@ def show_command(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    bot.send_message(message.chat.id, message.text)
+    bot.send_message(message.chat.id, 'Даже незнаю,что ответить')
     
 
 bot.polling(none_stop=True, timeout=123)
